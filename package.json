@@ -1,0 +1,34 @@
+{
+  "name": "gatsby-confluence-euf",
+  "version": "1.0.17",
+  "description": "A gatsby data source plugin for retrieving content out of Confluence for use on static sites",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eufDevelopment/gatsby-source-confluence.git"
+  },
+  "files": [
+    "index.js",
+    "gatsby-node.js",
+    "package.json",
+    "package-lock.json"
+  ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "confluence",
+    "euf"
+  ],
+  "author": "@Gabrieles after Dan Simpson <daniel_simpson1988@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eufDevelopment/gatsby-source-confluence/issues"
+  },
+  "homepage": "https://github.com/eufDevelopment/gatsby-source-confluence#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-fetch": "^2.6.1"
+  }
+}
