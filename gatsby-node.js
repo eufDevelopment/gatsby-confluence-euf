@@ -66,7 +66,7 @@ function updateLinksInHTML(html) {
   //eugem is the first part of the hostname
   //EUGEM is the space name
   const regexLinks = /href\s*=\s*(['"])(https?:\/\/eugem.+?|\/wiki\/.+?)\1/gm;
-  const regexId = /(?<=pages\/)([0-9]*)(?=\/)/i;
+  const regexId = /(?<=pages\/)([0-9]*)(?=[\/\W])/i;
   let link;
   let newURL;
   while((link = regexLinks.exec(html)) !== null) {
@@ -83,11 +83,6 @@ function updateLinksInHTML(html) {
     html = html.replace('/wiki/label/EUGEM/', '/wiki/labels?s=');
   }
 
-  const regexLinks3 = /(\/wiki\/spaces\/eugem\/pages\/)/gmi;
-  let link3;
-  while((link3 = regexLinks3.exec(html)) !== null) {
-    html = html.replace(regexLinks3, '/wiki/');
-  }
 
   return html;
 
