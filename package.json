@@ -1,6 +1,6 @@
 {
   "name": "gatsby-confluence-euf",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "A gatsby data source plugin for retrieving content out of Confluence for use on static sites",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
